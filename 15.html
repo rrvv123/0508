@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 날짜와 시간 정보를 얻을 수 있음
+        var nowDate = new Date();
+
+        var year = nowDate.getFullYear();
+        var month = nowDate.getMonth() + 1;
+        var date = nowDate.getDate();
+        var day = nowDate.getDay();
+        var hour = nowDate.getHours();
+        var minute = nowDate.getMinutes();
+        var seconds = nowDate.getSeconds();
+
+        var dayStr = "";
+        if(day==0){
+            dayStr = "일";
+        }
+        else if(day==1){
+            dayStr = "월";
+        }
+        else if(day==2){
+            dayStr = "화";
+        }
+        else if(day==3){
+            dayStr = "수";
+        }
+        else if(day==4){
+            dayStr = "목";
+        }
+        else if(day==5){
+            dayStr = "금";
+        }
+        else{
+            dayStr = "토";
+        }
+
+        alert(year + "년" + month + "월" + date + "일" + dayStr + "요일" + hour + "시" + minute + "분" + seconds + "초");
+
+        if(hour < 5){
+            alert("새벽이라 일어나면 손해");
+        }
+        else if(hour < 7){
+            alert("등교 준비");
+        }
+        else if(hour < 12){
+            alert("중식 먹으러");
+        }
+        else if(hour < 17){
+            alert("칼퇴중");
+        }
+        else{
+            alert("꿈나라");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

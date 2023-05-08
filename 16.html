@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var nowDate = new Date();
+        var hour = nowDate.getHours();
+
+        var msg = "";
+        if(hour < 5)
+            msg = "새벽시간....";
+        else if(hour < 7)
+            msg = "출근 준비중..";
+        else if(hour < 8)
+            msg = "등교중..";
+        else if(hour < 12)
+            msg = "식사중..";
+        else if(hour < 14)
+            msg = "오후 수업중..";
+        else if(hour < 16)
+            msg = "집가는중..";
+        else if(hour < 7)
+            msg = "잠잘 준비중.."
+        else
+            msg = "꿈나라..";
+
+        alert(msg);            
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
